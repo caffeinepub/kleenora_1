@@ -1,0 +1,29 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Swap Kleenora header logo to uploaded navbar-1.png",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Replace the current header logo asset with the uploaded navbar-1.png and ensure the header renders only the logo image (no additional header text).",
+      "acceptanceCriteria": [
+        "The header logo image source no longer points to the old logo asset (currently \"/assets/generated/kleenora-logo.dim_512x200.png\").",
+        "The header displays the uploaded image navbar-1.png as the site logo on both desktop and mobile.",
+        "No additional text label is rendered next to/around the logo in the header.",
+        "The logo loads successfully in production build without broken-image fallback."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/navbar-1.png",
+          "operation": "create",
+          "description": "Add the uploaded Kleenora logo file to the app's public assets so it is reliably served in production builds."
+        },
+        {
+          "path": "frontend/src/components/layout/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Update the header logo <img> to reference the new public asset (use /assets/navbar-1.png) instead of /assets/generated/kleenora-logo.dim_512x200.png, and ensure no text label is rendered alongside the logo in the header for both desktop and mobile."
+        }
+      ]
+    }
+  ]
+}

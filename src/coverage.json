@@ -1,0 +1,39 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-15T05:21:03.430Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-9",
+        "summary": "Update the site header branding to use the newly uploaded logo image file (navbar-1.png) as the header logo, replacing the currently referenced logo asset, and ensure no extra header text is added alongside the logo.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/navbar-1.png",
+          "frontend/src/components/layout/SiteHeader.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/layout/SiteHeader.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/kleenora-logo.dim_512x200.png",
+    "frontend/src/components/layout/SiteHeader.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

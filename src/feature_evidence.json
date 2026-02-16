@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-site-header-branding-to-use-the-newly-uploaded-logo-image-file-navbar-1-png-as-the-header-logo-replacing-the-currently-referenced-logo-asset-and-ensure-no-extra-header-text-is-added-alongside-the-logo",
+      "featureTitle": "Update the site header branding to use the newly uploaded logo image file (navbar-1.png) as the header logo, replacing the currently referenced logo asset, and ensure no extra header text is added alongside the logo.",
+      "files": [
+        "frontend/src/components/layout/SiteHeader.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

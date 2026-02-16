@@ -1,0 +1,48 @@
+{
+  "kind": "build_request",
+  "title": "Update site header to use the newly uploaded Kleenora logo",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Update the site header branding to use the newly uploaded logo image file (navbar-1.png) as the header logo, replacing the currently referenced logo asset, and ensure no extra header text is added alongside the logo.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "this is the new logo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The header logo image source no longer points to the old logo asset (currently \"/assets/generated/kleenora-logo.dim_512x200.png\").",
+        "The header displays the uploaded image navbar-1.png as the site logo on both desktop and mobile.",
+        "No additional text label is rendered next to/around the logo in the header.",
+        "The logo loads successfully in production build without broken-image fallback."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend paths listed as immutable must not be edited (compose read-only UI components rather than modifying them).",
+    "Do not introduce new backend services; keep the backend as a single Motoko actor."
+  ],
+  "nonGoals": [
+    "Changing the product catalog, pricing, or product images.",
+    "Changing brand colors, typography system, or site layout beyond what is necessary to swap the logo."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

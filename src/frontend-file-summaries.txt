@@ -1,0 +1,17 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates the site layout with header, hero, products, about, contact sections, footer, and passes bootstrapping state to ProductsSection for proper loading UI.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching products, initializing the catalog, and clearing products from the backend with proper cache invalidation.",
+  "frontend/src/hooks/useCatalogBootstrap.ts": "Custom hook that bootstraps the backend catalog with 14 Kleenora seed products, clearing old data first and invalidating React Query cache after completion to ensure the UI refreshes with the full catalog.",
+  "frontend/src/data/seedProducts.ts": "Deterministic seed data containing all 14 Kleenora products with correct names, prices, descriptions, and image paths matching the uploaded screenshots.",
+  "frontend/src/components/layout/SiteHeader.tsx": "Responsive header component displaying the new Kleenora logo from navbar-1.png with smooth-scroll navigation to sections, including mobile menu toggle.",
+  "frontend/src/components/layout/SiteFooter.tsx": "Footer component with copyright, Caffeine.ai attribution with UTM tracking, and heart icon matching the site theme.",
+  "frontend/src/components/sections/HeroSection.tsx": "Hero section with gradient background, brand messaging, and call-to-action button that scrolls to products section.",
+  "frontend/src/components/sections/ProductsSection.tsx": "Products catalog section that displays all 14 Kleenora products in a responsive grid, showing seed products as fallback during bootstrap and handling loading/error states with proper skeleton placeholders.",
+  "frontend/src/components/sections/AboutSection.tsx": "About section highlighting Kleenora's key values (safe & effective, eco-friendly, trusted quality) with icon cards.",
+  "frontend/src/components/sections/ContactSection.tsx": "Contact section displaying phone number (0300 4115550), email, and location in styled cards with icons.",
+  "frontend/src/components/products/ProductCard.tsx": "Product card component displaying product image, name, description, and price with hover effects and image error fallback.",
+  "frontend/src/components/products/ProductCardSkeleton.tsx": "Loading skeleton component for product cards shown while fetching data from the backend.",
+  "frontend/src/components/feedback/InlineError.tsx": "Reusable error display component with alert icon, error message, and optional retry button for failed operations.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining blue primary, orange secondary, and purple accent colors for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with Kleenora brand colors, custom border radius, Inter font family, and animation utilities."
+}

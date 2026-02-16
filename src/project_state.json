@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Build a company marketing/product-catalog website for Kleenora (Pakistan) selling cleaning products, using blue/orange/purple branding, with uploaded logo, updated product catalog from provided images, and updated contact info. Reattempting build after prior build failures/stalls.",
+  "architectural_notes": [
+    "Brand theme colors: blue, orange, purple.",
+    "Site represents Kleenora, a Pakistan-based cleaning products company.",
+    "Product catalog should be driven by a defined list of products derived from user-provided images; old/sample products should be removed.",
+    "Header should use uploaded logo image and not display redundant 'kleenora' text.",
+    "Logo asset has been updated by the user; replace the previously uploaded header/logo image with the new logo and keep header free of redundant 'kleenora' text."
+  ],
+  "known_issues": [
+    "Build/deploy process previously stalled/failed, preventing product and logo updates from appearing.",
+    "Products not visible on the live site due to pending/unapplied catalog update."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-update-the-website-header-to-use-the-uploaded-logo-image-navbar-png-as-the-site-logo-and-remove-the-header-text-that-says-kleenora",
+      "title": "Update the website header to use the uploaded logo image (navbar.png) as the site logo and remove the header text that says “kleenora”.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-product-catalog-by-deleting-all-old-products-and-adding-only-the-products-shown-in-the-uploaded-screenshots-using-product-images-derived-from-the-uploaded-screenshots",
+      "title": "Replace the existing product catalog by deleting all old products and adding only the products shown in the uploaded screenshots, using product images derived from the uploaded screenshots.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-section-to-include-the-phone-number-0300-4115550",
+      "title": "Update the Contact section to include the phone number “0300 4115550”.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-and-enforce-a-cohesive-kleenora-visual-theme-using-the-requested-brand-colors-blue-orange-purple-across-the-site-typography-buttons-section-backgrounds-accents-while-keeping-the-layout-clean-and-consistent-for-a-cleaning-products-brand",
+      "title": "Apply and enforce a cohesive Kleenora visual theme using the requested brand colors (blue, orange, purple) across the site (typography, buttons, section backgrounds, accents) while keeping the layout clean and consistent for a cleaning-products brand.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-products-section-is-visibly-present-and-reachable-from-navigation-and-that-the-user-can-always-see-products-without-requiring-any-admin-setup-steps",
+      "title": "Ensure the Products section is visibly present and reachable from navigation, and that the user can always see products without requiring any admin/setup steps.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-products-section-displays-the-full-kleenora-product-set-14-items-after-the-app-boots-using-the-product-images-derived-from-the-uploaded-screenshots",
+      "title": "Ensure the Products section displays the full Kleenora product set (14 items) after the app boots, using the product images derived from the uploaded screenshots.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-header-branding-to-use-the-newly-uploaded-logo-image-file-navbar-1-png-as-the-header-logo-replacing-the-currently-referenced-logo-asset-and-ensure-no-extra-header-text-is-added-alongside-the-logo",
+      "title": "Update the site header branding to use the newly uploaded logo image file (navbar-1.png) as the header logo, replacing the currently referenced logo asset, and ensure no extra header text is added alongside the logo.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create Kleenora (Pakistan) company website with main theme colors blue, orange, and purple",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Replace existing catalog by removing old products and adding only the products shown in uploaded images (using the provided product image(s))",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add contact phone number 0300 4115550 to the Contact section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Replace header logo with the uploaded navbar.png and remove the text 'kleenora' from the header",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Retry building/deploying the website after previous build did not complete or failed",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Update the backend catalog initialization so that the default products are the Kleenora cleaning products shown in the uploaded screenshots (not the current sample food items). The initialized products must include the same IDs, names, descriptions, prices, and image/thumbnail paths used by the frontend seed catalog.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Fix backend product mutation semantics so the frontend catalog bootstrap can reliably load the full Kleenora seed catalog: updating a product should not trap when the product does not already exist (i.e., allow upsert behavior or provide a create/add operation that the frontend can use).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Update the site to use the newly provided logo (replace the previous logo asset in the header/branding)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Kleenora",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
